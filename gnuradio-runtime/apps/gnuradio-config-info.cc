@@ -13,6 +13,7 @@
 #include <config.h>
 #endif
 
+#include <gnuradio/gnuradio-runtime/apps/gnuradio-config-info.rs.h>
 #include <gnuradio/constants.h>
 #include <gnuradio/prefs.h>
 #include <gnuradio/sys_paths.h>
@@ -23,6 +24,7 @@ namespace po = boost::program_options;
 
 int main(int argc, char** argv)
 {
+    std::cerr << "Hello from " << grust::hello() << std::endl;
     po::options_description desc("Program options: " + std::string(argv[0]) +
                                  " [options]");
     po::variables_map vm;
