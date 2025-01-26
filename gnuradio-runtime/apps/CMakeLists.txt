@@ -38,7 +38,7 @@ add_custom_target(cargo_build-gnuradio-config-info
 )
 
 add_library(rs-gnuradio-config-info STATIC ${cc_file})
-target_link_libraries(rs-gnuradio-config-info ${lib_file})
+target_link_libraries(rs-gnuradio-config-info ${lib_file} gnuradio-runtime)
 target_include_directories(rs-gnuradio-config-info INTERFACE ${CMAKE_SOURCE_DIR}/target/cxxbridge/)
 add_dependencies(rs-gnuradio-config-info cargo_build-gnuradio-config-info)
 

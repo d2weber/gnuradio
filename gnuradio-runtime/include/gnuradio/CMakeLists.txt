@@ -50,6 +50,7 @@ install(
           msg_accepter.h
           msg_handler.h
           msg_queue.h
+          myfunction.h
           nco.h
           pmt_fmt.h
           pdu.h
